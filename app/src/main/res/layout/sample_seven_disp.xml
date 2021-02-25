@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cz.tomas_franke.sevendisptest.SevenDisp
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:background="#ccc"
+        android:paddingBottom="40dp"
+        android:paddingLeft="20dp"
+        app:showPoint="true"
+        app:isLeft="true"
+        app:offColor="#444"
+        app:onColor="#f44"
+        app:initState="64"
+        />
+
+</FrameLayout>

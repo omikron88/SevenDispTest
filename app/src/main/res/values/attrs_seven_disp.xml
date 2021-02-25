@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="SevenDisp">
+        <attr name="showPoint" format="boolean"/>
+        <attr name="isLeft" format="boolean"/>
+        <attr name="offColor" format="color"/>
+        <attr name="onColor" format="color"/>
+        <attr name="initState" format="integer"/>
+    </declare-styleable>
+</resources>

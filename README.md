@@ -1,1 +1,2 @@
-This is just the Seven Segment Display demo.
+Just a test of Android project
+Seven segment display demo...

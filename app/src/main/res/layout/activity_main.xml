@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:style="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cz.tomas_franke.sevendisptest.MainActivity">
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bar1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:max="15"
+        android:progress="0"
+        android:onClick="barChange"
+        android:clickable="true"
+        android:longClickable="true"
+        android:contextClickable="true" />
+
+    <cz.tomas_franke.sevendisptest.SevenDisp
+        android:id="@+id/disp1"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:background="#333"
+        android:paddingBottom="40dp"
+        android:paddingLeft="20dp"
+        style:showPoint="true"
+        style:isLeft="false"
+        style:offColor="#444"
+        style:onColor="#f44"
+        style:initState="64"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bar1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/check1"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        android:text="DP" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gr1"
+        android:layout_marginBottom="35dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/check1"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:text="Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnL"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="None"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnN"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnR"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+</RelativeLayout>
